@@ -1,0 +1,22 @@
+{
+  "name": "Post Summary Generator",
+  "description": "Summary Generator using Cohere technology",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.medium.com/*",
+        "https://*.towardsai.net/*",
+        "https://*.towardsdatascience.com/*",
+        "https://*.levelup.gitconnected.com/*"
+      ],
+      "css": ["styles/index.css"],
+      "js": ["scripts/index.js"]
+    }
+  ]
+}

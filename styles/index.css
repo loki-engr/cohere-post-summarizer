@@ -1,0 +1,30 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-summary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border:  1px solid #000000;
+  border-radius: 100%;
+}
+
+.btn-summary:hover {
+  cursor: pointer;
+  background-color: #ededee;
+}
+
+.btn-side {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.btn-bottom {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
